@@ -27,6 +27,20 @@ Where
 - P = Padding(0 in our case)
 - S = Stride length
 
+The implementation of the network Pytorch is as follows:
+
+  ```
+  Network(
+    (conv1): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1))
+    (conv2): Conv2d(6, 12, kernel_size=(5, 5), stride=(1, 1))
+    (fc1): Linear(in_features=10, out_features=64, bias=True)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (fc3): Linear(in_features=128, out_features=64, bias=True)
+    (out1): Linear(in_features=64, out_features=10, bias=True)
+    (out2): Linear(in_features=64, out_features=19, bias=True)
+  )
+  ```
+
 ## Data representation
 
 ### Input Data
